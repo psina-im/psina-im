@@ -1,0 +1,3 @@
+[submodule "libcxxim"]
+	path = libcxxim
+	url = git@github.com:psina-im/libcxxim.git
