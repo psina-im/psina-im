@@ -2,7 +2,8 @@
 /// \file main.cpp
 /// Contains application main function
 
-#include "main_window.hpp"
+#include "cxxim/ui/qt/main_window.hpp"
+#include "cxxim/ui/qt/qt_application.hpp"
 #include <QApplication>
 #include <boost/program_options.hpp>
 #include <clocale>
@@ -40,8 +41,8 @@ int main(int argc, char * argv[]) {
             return 1;
         }
 
-        QApplication app{argc, argv};
-        psina::main_window main_wnd;
+        im::ui::qt_application app{argc, argv};
+        im::ui::main_window main_wnd{app};
         main_wnd.show();
         return app.exec();
 
